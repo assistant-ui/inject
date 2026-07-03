@@ -1,10 +1,17 @@
 {
   "name": "@assistant-ui/inject",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A minimal dependency injection library: generators that yield* the services they need",
   "license": "MIT",
   "author": "AgentbaseAI Inc.",
-  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/assistant-ui/inject.git"
+  },
+  "homepage": "https://github.com/assistant-ui/inject#readme",
+  "publishConfig": {
+    "access": "public"
+  },
   "type": "module",
   "sideEffects": false,
   "packageManager": "pnpm@11.9.0",
