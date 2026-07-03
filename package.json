@@ -9,9 +9,18 @@
   "sideEffects": false,
   "packageManager": "pnpm@11.9.0",
   "exports": {
-    ".": "./src/index.ts"
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
   },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
+    "build": "aui-build",
     "typecheck": "tsc --noEmit",
     "test": "node --test \"test/*.test.ts\""
   },
